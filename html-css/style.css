@@ -1,0 +1,268 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: calc(1200px + 40px);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 800;
+    color: #828282;
+    line-height: 96px;
+}
+
+header {
+    background: url(/background.jpg);
+    padding-top: 58px;
+    padding-bottom: 116px;
+}
+
+header .logo {
+    margin-bottom: 50px;
+}
+
+header .slogan {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 18px 48px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 59px;
+    margin-bottom: 17px;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 144px;
+    line-height: 134px;
+    font-weight: 900;
+    text-shadow: 0px 0px 40px #00000080;
+    margin-bottom: 100px;
+}
+
+button {
+    color: #48924F;
+    background: #fff;
+    padding: 21px 53px;
+    box-shadow: 0px 10px 50px 0px #10331E80;
+    border-radius: 35px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+}
+
+section#services {
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+section#services h2 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section#services h2::after {
+    position: absolute;
+    content: '';
+    width: 108.63px;
+    height: 93.94px;
+    background: url(/grass.png);
+    top: 48px;
+    left: -4px;
+}
+
+section#services .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    margin-bottom: 50px;
+}
+
+section#services .cards-container .card {
+    flex: 1;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px #10331E1A;
+    border-radius: 30px;
+    font-size: 0;
+}
+
+.card figcaption {
+    padding: 30px;
+}
+
+.card figcaption h3 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    color: #0D4D14;
+    margin-bottom: 10px;
+}
+
+.card figcaption p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #0d3d14;
+}
+
+section#about-us {
+    padding-top: 35px;
+}
+
+section#about-us h2 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section#about-us h2::after {
+    position: absolute;
+    content: '';
+    width: 108.63px;
+    height: 93.94px;
+    background: url(/grass.png);
+    top: 41px;
+    right: -65px;
+}
+
+section#about-us .bg-container {
+    background: url(/bg-about-us.png);
+    padding-top: 154px;
+    padding-bottom: 50px;
+}
+
+section#about-us .text-cols {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+section#about-us .text-col {
+    flex: 1;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+section#testymonials {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+section#testymonials h2 {
+    margin-bottom: 70px;
+}
+
+.comments-container {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.comment {
+    padding: 30px;
+    background: #fff;
+    border-radius: 40px;
+    border: 1px solid #6cb981;
+    font-size: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.comment figcaption {
+    display: block;
+}
+
+.comment figcaption h3 {
+    padding-left: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #6cb981;
+}
+
+.comment figcaption p {
+    padding: 14px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #0d4c14;
+}
+
+.comment figcaption img {
+    padding-left: 14px;
+}
+
+section#contact-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section#contact-us h2{
+    margin-bottom: 70px;
+}
+
+section#contact-us .contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+section#contact-us .left form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+section#contact-us .left input{
+    background: #9FDEA9;
+    width: 374px;
+    height: 56px;
+    border-radius: 61px;
+    border: none;
+}
+
+section#contact-us .left button{
+    box-shadow: none;
+    border: 3px solid #3db96b;
+    width: 168px;
+    height: 56px;
+    border-radius: 61px;
+}
+
+section#contact-us .right{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer{
+    height: 145px;
+    background: #324B29;
+}

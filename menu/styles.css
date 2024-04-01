@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* selector {
+    property: value:
+    БАМ_БАМ_БАМ_УЧИМ_ЦСС
+} */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    height: 50px;
+}
+header #open-menu-button{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+header #open-menu-button .burger-icon{
+    width: 30px;
+    height: 30px;
+}
+header #menu{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: -500%;
+    background: red;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .8s ease;
+}
+header #menu.open{
+    top: 0;
+    opacity: 1;
+    background: blue;
+}
+header #menu ul{
+    list-style: none;
+}
+header #menu ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+header #close-menu-button{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+header #close-menu-button .close-icon {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    padding: 50px;
+    flex: 1;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px 50px;
+    background: #000;
+    text-align: center;
+    color: #eee;
+}
+
+@media(max-width:650px){
+    header #menu{
+        flex-direction: column;
+        align-items: start;
+        height: 100dvh;
+        top: -100dvh;
+    }
+}
+
